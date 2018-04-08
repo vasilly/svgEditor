@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+<link href="svgEditor.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<svg id="svg-icon" class="" viewBox="0 0 80 80">
+
+    <defs>
+    <pattern id="image" patternUnits="userSpaceOnUse" height="80" width="80">
+
+      <!-- <image x="-32" y="5" height="70" width="70" xlink:href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIi3kmwe0LnID_Eo3zrs_xe2ORpv4ihrn-DOnCHLXVtiI2lGHO"></image> -->
+      <image x="-59.5" y="-12" height="100" width="100" xlink:href="padlock.png"></image>
+
+<!--       <image x="-2" y="0" height="80" width="80" xlink:href="http://www.thoroughbredreport.com/photos/20060826/R02_finish.jpg"></image> -->
+
+
+    </pattern>
+  </defs>
+  <g>
+    <rect
+          x="0"
+          y="0"
+          width="80"
+          height="80"
+          fill="url(#image)"/>
+
+<!-- <svg id="" class="" viewBox="0 0 80 80"> <path stroke="black" stroke-width=1 fill= "none"stroke-linecap="round" stroke-linejoin="round"d="M 58,52 22,52 22,28 38,22 42,22 58,28 58,52 M 22,36 32,36 A 10,10   0 0 1  40,40 M 40,40 A 10,10   0 0 1  48,36 M 48,36 58,36 M 58,36 M 40,28 A 2,2   0 0 1  40,22 M 40,22 A 2,2   0 0 1  40,28 M 40,28 M 22,28 M 22,28 24,22 M 24,22 36,16 M 36,16 44,16 M 44,16 56,22 M 56,22 58,28 M 58,28 M 52,72 M 52,72 48,66 M 48,66 M 26,72 M 26,72 30,66 M 30,66 M 80,66 M 80,66 58,56 M 58,56 M 76,60 M 76,60 58,54 M 58,54 M 78,58 M 78,58 58,54 M 58,54 M 78,56 M 78,56 58,54 M 58,54 M 0,58 M 0,58 22,52 M 22,52 M 0,52 M 0,52 20,50"/></svg>-->
+<svg id="svgDrawnInGrid" class="" viewBox="0 0 80 80"> <path stroke="black" stroke-width=1 fill= "none"stroke-linecap="butt" stroke-linejoin="miter"d=""/></svg>
+</svg>
+
+<svg id="svg-grid" class="grid" viewBox="0 0 80 80">
+</svg>
+
+<div class="buttonContainer">
+  <button class="clear">Clear</button>
+  <button class="moveTo">Move To</button>
+  <button class="undo">Undo</button>
+  <button class="btn-circle">Circle</button>
+  <button class="jsClearBackground">Background</button>
+  <br>
+  <br>
+
+  <label for="rangeinput">path width</label>
+  <input id="rangeinput" type="range" min="0" max="10" value="1" step="0.1" </input>
+  <output id="rangevalue">1</output>
+
+  <label for="rangeinputRadius">circle radius</label>
+  <input id="rangeinputRadius" type="range" min="0" max="20" value="1" step="1" </input>
+  <output id="rangevalueRadius">1</output>
+
+
+  <label for="rangeinputGridSpace">grid spacing</label>
+  <input id="rangeinputGridSpace" type="range" min="1" max="10" value="5" step="1" </input>
+  <output id="rangevalueGridSpace">5</output>
+
+  <div class="outputSVG">
+    <svg id="outputSVG" class="" viewBox="0 0 80 80">
+      <svg id=""
+           class=""
+           viewBox="0 0 80 80">
+        <path stroke="black"
+              stroke-width=1
+              fill= "none"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              d=""/>
+      </svg>
+    </svg>
+  </div>
+
+  <h6>SVG code compressed</h6>
+  <textarea name="" id="textarea1" cols="30" rows="5" autocorrect="off" spellcheck="false"></textarea>
+  <h6>SVG code formatted</h6>
+  <pre><code id="codeArea" contenteditable="true" autocorrect="off" spellcheck="false"></code></pre>
+
+</div>
+
+<script src="constants.js"></script>
+<script src="functions.js"></script>
+<script src="functionsHover.js"></script>
+<script src="functionsGrid.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
